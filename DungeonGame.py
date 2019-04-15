@@ -69,9 +69,10 @@ He says,
     print(
       """
 In front of you are 2 muffins. 
-Muffin 1 has translucent icing, and purple cake underneath. 
-Muffin 2 has a creme cake, bright red top,and white dots.
 
+Muffin 1 has translucent icing, and purple cake underneath. 
+
+Muffin 2 has a creme cake, bright red top,and white dots.
 
       """
     )
@@ -81,9 +82,37 @@ Muffin 2 has a creme cake, bright red top,and white dots.
 
 def checkMuffin(chosenMuffin):
   if chosenMuffin == '1':
-    print("You are invisible.")
+    print("""
+The muffin doesn't seem to have much flavor, but you enjoy it anyway.
+You notice the baker seems to be looking at you with a worried stare.
+
+You turn to look in a mirror on the wall. 
+You see all of your clothes still sitting at the table,
+but there doesn't seem to be a person in the clothes.
+
+""")
+    time.sleep(8)
+    print("Looks like you're invisible. Life is going to be a lot weirder now.")
+    print()
+    time.sleep(3)
+    print("===THE END===")
   else:
-    print("You a big boi now.")
+    print("""
+You feel your hands and feet begin to swell, 
+and you can feel a tingling sensation all over your body.
+""")
+    time.sleep(3)
+    print("You feel a bump on your head as you grow through the roof.")
+    print("You're still growing as your head is beginning to touch the clouds.")
+    print()
+    time.sleep(2)
+    print("As your head reaches space you notice it's becoming harder to breathe.")
+    time.sleep(2)
+    print("""
+You suffocate due to lack of oxygen outside the atmosphere.
+
+===THE END===
+""")
 
 playAgain = 'yes'
 while playAgain == 'yes' or playAgain == 'y':
